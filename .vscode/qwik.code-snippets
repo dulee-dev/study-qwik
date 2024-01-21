@@ -4,27 +4,8 @@
     "prefix": "qcomponent$",
     "description": "Simple Qwik component",
     "body": [
-      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = component$(() => {",
-      "  return <${2:div}>$4</$2>",
-      "});"
-    ]
-  },
-  "Qwik component (props)": {
-    "scope": "typescriptreact",
-    "prefix": "qcomponent$ + props",
-    "description": "Qwik component w/ props",
-    "body": [
-      "export interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {",
-      "  $2",
-      "}",
-      "",
-      "export const $1 = component$<$1Props>((props) => {",
-      "  const ${2:count} = useSignal(0);",
-      "  return (",
-      "    <${3:div} on${4:Click}$={(ev) => {$5}}>",
-      "      $6",
-      "    </${3}>",
-      "  );",
+      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = component$(() => {$0",
+      "  return <></>",
       "});"
     ]
   },
