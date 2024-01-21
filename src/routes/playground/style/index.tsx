@@ -1,5 +1,7 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useSignal } from '@builder.io/qwik';
+import { Template } from './template';
 
 export default component$(() => {
-  return <></>;
+  const text = useSignal('');
+  return <Template text={text} />;
 });
