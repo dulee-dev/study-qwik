@@ -1,23 +1,35 @@
 {
   "Qwik component (simple)": {
     "scope": "javascriptreact,typescriptreact",
+    "prefix": "!qcomponent$",
+    "description": "Simple Qwik component",
+    "body": [
+      "import { component$ } from '@builder.io/qwik';",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = component$(() => {$0",
+      "  return <></>",
+      "});"
+    ]
+  },
+  "Qwik component (internal)": {
+    "scope": "javascriptreact,typescriptreact",
     "prefix": "qcomponent$",
     "description": "Simple Qwik component",
     "body": [
-      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = component$(() => {$0",
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = component$(() => {$0",
       "  return <></>",
       "});"
     ]
   },
   "Qwik signal": {
     "scope": "javascriptreact,typescriptreact",
-    "prefix": "quseSignal",
+    "prefix": "qSignal",
     "description": "useSignal() declaration",
     "body": ["const ${1:foo} = useSignal($2);", "$0"]
   },
   "Qwik store": {
     "scope": "javascriptreact,typescriptreact",
-    "prefix": "quseStore",
+    "prefix": "qStore",
     "description": "useStore() declaration",
     "body": ["const ${1:state} = useStore({", "  $2", "});", "$0"]
   },

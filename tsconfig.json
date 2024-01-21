@@ -17,10 +17,11 @@
     "outDir": "tmp",
     "noEmit": true,
     "types": ["node", "vite/client"],
+    "typeRoots": ["types", "./node_modules/@types"],
     "paths": {
-      "~/*": ["./src/*"]
-    }
+      "~/*": ["./src/*"],
+    },
   },
   "files": ["./.eslintrc.cjs"],
-  "include": ["src", "./*.d.ts", "./*.config.ts"]
+  "include": ["src", "./*.d.ts", "./*.config.ts"],
 }
