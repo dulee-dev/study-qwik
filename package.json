@@ -23,7 +23,7 @@
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
-    "serve": "node server/entry.fastify",
+    "serve": "PORT=3000 ORIGIN=https://example.com node server/entry.fastify",
     "start": "vite --open --mode ssr",
     "test.unit": "vitest components",
     "test.unit.ui": "vitest --ui components",
